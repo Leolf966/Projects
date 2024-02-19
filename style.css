@@ -1,0 +1,184 @@
+body {
+    background-color: #24252A;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* Nav */
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    font-size: 22px;
+    list-style: none;
+}
+
+.nav-link {
+    transition: 0.35s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+
+input {
+    background-color: rgba(255, 249, 240, 0.1);
+    color: #fff;
+    width: 294px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 22px;
+    padding-left: 30px;
+}
+
+input::placeholder {
+    color: rgba(156, 152, 152, 0.47)
+}
+
+/* main */
+
+.main-section {
+    display: flex;
+    margin-left: 110px;
+}
+
+.title {
+    font-size: 125px;
+    font-weight: 700;
+
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subtext {
+    color: rgba(255, 146, 44, 0.78);
+    font-size: 52px;
+    font-weight: 700;
+    margin: -180px 15px;
+    padding-top: 334px;
+}
+
+.description {
+    margin-left: 115px;
+    margin-top: -180px;
+    font-size: 22px;
+}
+
+.description-text {
+    color: #909090;
+
+}
+
+/* Food category */
+
+
+.time-of-day {
+    display: flex;
+    justify-content: center;
+    margin-right: 70px;
+}
+
+.category_name {
+    text-align: center;
+    margin-right: 60px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.food_image {
+    margin-right: 60px;
+}
+
+
+/* recipe*/
+
+.recipe ul {
+    margin-left: 95px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.dish-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 115px;
+    margin-bottom: -15px;
+}
+
+.ingredient-item {
+    color: #C4C4C4;
+
+}
+
+.ingredient-item::marker {
+    color: #fff;
+}
+
+.meal-details {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    margin-right: 160px;
+}
+
+.meal-info {
+    margin-right: 70px;
+    font-weight: 500;
+}
+
+/* Footer */
+
+.footer {
+    margin-left: 48px;
+}
+
+.designer-info {
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -60px;
+}
+
+.about_us {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    
+}
+
+.about_title {
+    color: rgba(170, 167, 167, 0.46);
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.rating {
+    color: #fff;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.review {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.line {
+    width: 354.89px;
+    height: 1px;
+    background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border: 4px;
+    margin-left: 310px;
+}
