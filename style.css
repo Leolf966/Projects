@@ -139,7 +139,7 @@ body {
 .graphic-designer {
     display: flex;
     justify-content: space-between;
-    margin: 0px 130px 0px 90px;
+    margin: 0px 130px ;
 }
 
 .face {
@@ -148,7 +148,7 @@ body {
 
 .info {
     display: inline-block;
-    margin-right: 180px;
+    margin-right: 170px;
 }
 
 
@@ -191,13 +191,14 @@ body {
 .name-hero {
     font-size: 27px;
     font-weight: 600;
+    position: relative;
 }
 
 .name-hero::before {
     content: '\003C'; 
     position: absolute;
-    right: 340px;
-    top: 1033px;
+    right: 210px;
+    top: 18px;
 }
 
 /* For-who */
