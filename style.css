@@ -136,6 +136,14 @@ input::placeholder {
     font-weight: 500;
 }
 
+.col-item {
+    color: orange;
+}
+
+.size-item {
+    font-size: 18px;
+}
+
 /* Footer */
 
 .footer {
