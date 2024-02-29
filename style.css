@@ -138,8 +138,7 @@ body {
 
 .graphic-designer {
     display: flex;
-    justify-content: space-between;
-    margin: 0px 130px ;
+    justify-content: center;
 }
 
 .face {
