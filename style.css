@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "KyivTypeTitling";
+    src: url(/fonts/KyivTypeTitling-Medium.otf)
+}
+
+* {
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background-image: url(./imgs/back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    font-family: "Inter", sans-serif;
+    margin: 0 30px 0 60px;
+}
+
+/* Header */
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px 118px 0px;
+}
+
+.header-logo,
+.header-user {
+    display: flex;
+    align-items: center;
+}
+
+.header-user {
+    column-gap: 45px;
+}
+
+.header-logo {
+    column-gap: 16px;
+}
+
+.date-logo {
+    font-family: "KyivTypeTitling", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    padding-left: 29px;
+    color: #C8C8C8;
+}
+
+.date-logo::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 28px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+
+
+    /* Main */
+
+.types span {
+    display: inline-block;
+    padding: 0 23px;
+    position: relative;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    margin-bottom: 30px;
+
+}
+
+.types span::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 39px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+.types span:first-child {
+    padding-left: 0;
+}
+
+.types span:last-child::before {
+    display: none;
+}
+
+/* info */ 
+
+.title-text {
+    font-size: 64px;
+    font-weight: 800;
+    margin-top: -10px;
+    letter-spacing: 3px;
+}
+
+
+.info {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.info-item {
+    font-size: 29px;
+    line-height: 0;
+    position: relative;
+    padding: 0 23px;
+}
+
+.secondary-info {
+    font-size: 30px;
+    color: #A7A6A6;
+}
+
+.info-item::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: -9px;
+}
+
+.info-item:first-child {
+    padding-left: 0;
+}
+
+.info-item:last-child::after {
+    display: none;
+}
+
+.description {
+    font-size: 24px;
+    color: #A7A6A6;
+}
+
+.paragraph {
+    font-size: 24px;
+    padding-left: 8px;
+    color: #A7A6A6;
+}
+
+.star-icon {
+    margin-right: 10px;
+}
+
+.btn-content {
+    margin-top: 50px;
+}
+
+.stream-btn {
+    width: 272px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: #D40D1F;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    padding-right: 65px;
+}
+
+.volume {
+    position: relative;
+    right: 80px;
+    top: 8px;
+}
+
+.episode-btn {
+    width: 271px;
+    height: 64px;
+    border: 3px solid;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    background: none;
+    margin-left: 10px;
+}
+
+/* Footer */
+
+.recomendation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 890px;
+}
+
+.recomendation-btn {
+    display: flex;
+    column-gap: 27px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.recomendation-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 17px;
+}
+
+.recomendation-btn button:hover {
+    border: 1.42px solid rgb(167, 166, 166);
+    color: rgba(167, 166, 166);
+}
+
+.pop-films {
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-posters,
+.footer-user {
+    display: flex;
+    align-items: center;
+}
+
+.film {
+    margin: 10px 35px 35px 0px;
+}
+
+.age-category-btn {
+    width: 174px;
+    height: 66px;
+    background-color: rgba(255, 255, 255, 0.49);
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    position: relative;
+    top: 80px;
+    left: 67px;
+    padding-right: 30px;
+}
+
+.back-btn {
+    position:relative;
+    right: 112px;
+    top: 105px;
+}
