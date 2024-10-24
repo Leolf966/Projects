@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Body */
+body {
+    margin: 70px 0 0 70px;
+}
+
+.Sehinde,
+.Oreoluwa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    margin: 60px 0;
+}
+
+.image-container {
+    display: grid;
+    grid-template-areas: "image";
+    position: relative;
+}
+
+.Profile-img {
+    grid-area: image;
+    width: 279px;
+    height: 401px;
+    border-radius: 12px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 10px;
+    backdrop-filter: blur(3px);
+}
+
+.text-background p {
+    margin-top: 10px;
+
+}
+
+.Name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.job-text {
+    color: #F9CB28;
+    font-size: 16px;
+}
+
+.job-info {
+    font-size: 14px;
+    color: #fff;
+}
+
+.info {
+    margin: 40px 0 0 35px;
+}
+
+.info-person {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.about-person {
+    color: #0C0D1F80;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.title-info {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.goal-frustration-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.goal,
+.frustrations {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.goal-item,
+.frustration-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 15px 0 10px 15px;
+}
+
+.goal-item img,
+.frustration-item img {
+    margin: 1px 10px 0 0;
+}
+
+.every {
+    font-size: 14px;
+}
