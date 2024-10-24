@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="../Css media/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="back-line"></div>
+        <header>
+            <nav class="navbar" id="nav-links">
+                <nav class="container">
+                    <a href="#" class="navbar-logo"> <img class="main-img" src="../img/logo.svg" alt=""></a>
+                    <div class="items" id="menu-items">
+                        <ul>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="">PRODUCTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">AESTHETIC LINES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">INSPIRATION</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-search">
+                        <div class="left-icons">
+                            <img class="burger-icon search icon" src="../img/burger.svg" alt="Menu" onclick="toggleMenu()">
+                            <img class ="header-icon search-icon" src="../img/search.svg" alt="Search">
+                        </div>    
+                            <div class="right-icons">
+                                <img class ="header-icon" src="../img/profile.svg" alt="Profile">
+                                <img class ="header-icon" src="../img/shopping.svg" alt="Shopping">
+                            </div>
+                    </div>
+                </nav>
+        </header>
+        <main>
+        <div class="left-content">
+            <h1 class="kettle">Kettles</h1>
+                <p class="kettle-info">The variable temperature kettle has been created for real tea lovers,<br class="info-text"> where precision of temperature is so important.</p>
+                    <div class="btn-content">
+                        <button class="shop-btn"> SHOP NOW</button>
+                            <div class="video">
+                                <div class="volume-wrapper">
+                        <button class="video-volume">
+                        <i class="fa-solid fa-play"></i>
+                        </button>
+                                </div>
+                            <p class="video-title">
+                                WATCH VIDEO
+                            </p>
+                            </div>
+                    </div>
+                    <div class="switch-kettle">
+                        <a href="../blue-kettle/index.html" class="switch-img-link">
+                            <img class="switch-img" src="../img/small-blue.svg" alt="">
+                        </a>
+                        <a href="../red-kettle/red-index.html" class="switch-img-link">
+                            <img class="switch-img" src="../img/small-red.svg" alt="">
+                        </a>
+                        <a href="../pink-kettle/pink-index.html" class="switch-img-link">
+                            <img class="switch-img" src="../img/small-pink.svg" alt="">
+                        </a>
+                        <a href="../beige-kettle/beige-index.html" class="switch-img-link">
+                            <img class="switch-img" src="../img/small-beige.svg" alt="">
+                        </a>
+                    </div>
+        </div>
+            <div class="right-content">
+                <img class="kettle-img" src="../img/red-kettle.svg" alt="">
+                    <div class="red-img">
+                    <img class="back-img" src="../img/red.svg" alt="">
+                    </div>
+                    <div class="dot-navigation">
+                        <ul>
+                            <li class="dot active"></li>
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modal" id="productModal">
+            <div class="modal-content">
+                <h1 class="modal-title">MAJOR APPLIANCES</h1>
+                <div class="modal-links">
+                        <p class="modal-link" onclick="openTab('Blue')">Ovens</p>
+                        <p class="modal-link" onclick="openTab('Red')">Blast chillers</p>
+                        <p class="modal-link" onclick="openTab('Pink')">Microwave ovens</p>
+                        <p class="modal-link" onclick="openTab('Beige')">Coffee machines</p>
+                        <p class="modal-link" onclick="openTab('Blue')">Hobs</p>
+                        <p class="modal-link" onclick="openTab('Red')">Cookers</p>
+                        <p class="modal-link" onclick="openTab('Pink')">Hoods</p>
+                        <p class="modal-link" onclick="openTab('Beige')">Refrigerators</p>
+                        <p class="modal-link" onclick="openTab('Beige')">Freezers</p>
+                </div>
+                <div class="modal-links">
+                        <p class="modal-link" onclick="openTab('Pink')">Wine coolers</p>
+                        <p class="modal-link" onclick="openTab('Beige')">Sinks</p>
+                        <p class="modal-link" onclick="openTab('Blue')">Taps</p>
+                        <p class="modal-link" onclick="openTab('Red')">Dishwashers</p>
+                        <p class="modal-link" onclick="openTab('Pink')">Washing machines</p>
+                        <p class="modal-link" onclick="openTab('Beige')">Cookers</p>
+                        <p class="modal-link" onclick="openTab('Beige')">Tumble dryers</p>
+                        <p class="modal-link" onclick="openTab('Beige')">Accessories</p>
+                </div>
+                <div class="modal-links">
+                    <h2 class="modal-subtitle">SMALL APPLIANCES</h2>
+                    <p class="modal-link" onclick="openTab('Pink')">Toasters</p>
+                    <p class="modal-link" onclick="openTab('Beige')">Kettles</p>
+                    <p class="modal-link" onclick="openTab('Blue')">Citrus juicers</p>
+                    <p class="modal-link" onclick="openTab('Red')">Milk frothers</p>
+                    <p class="modal-link" onclick="openTab('Pink')">Stand mixers</p>
+                    <p class="modal-link" onclick="openTab('Beige')">Blenders</p>
+                    <p class="modal-link" onclick="openTab('Beige')">Hand blenders</p>
+                </div>
+                <div class="modal-links">
+                    <h2 class="modal-subtitle">SPECIAL PROJECTS</h2>
+                <p class="modal-link" onclick="openTab('Pink')">Divina cucina</p>
+                <p class="modal-link" onclick="openTab('Beige')">Sicily is my love</p>
+                <p class="modal-link" onclick="openTab('Blue')">Regrigerator of Art</p>
+                <p class="modal-link" onclick="openTab('Red')">SMEG500</p>
+                <p class="modal-link" onclick="openTab('Pink')">Mickey Mouse fridge</p>
+                <p class="modal-link" onclick="openTab('Beige')">Independent FAB</p>
+                <p class="modal-link" onclick="openTab('Beige')">Smeg & Coca-Cola</p>
+                </div>
+            </div>
+        </div>
+        <script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+@media (max-width: 375px) {
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-item.active .nav-link::after {
+        display: none; 
+    }
+
+    .navbar .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+ 
+    .navbar-logo {
+        font-size: 24px;
+        display: flex;
+    }
+
+    .items {
+        display: none;
+    }
+
+    .navbar-search {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .left-icons {
+        display: flex;
+        position: relative;
+        right: 60px;
+        column-gap: 5px;
+    }
+
+    .right-icons {
+        display: flex;
+        column-gap: 5px;
+        position: relative;
+        left: 60px;
+    }
+
+    .header-icon {
+        width: 40px; 
+        height: 40px;
+    }
+
+    /*бургер-меню */
+    .items {
+        display: none;
+        position: absolute;
+        top: 35px; 
+        background-color: white;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .items ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .items ul li {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .items ul li a {
+        color: black;
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .items.show {
+        display: block;
+    }
+    .burger-icon {
+        display: flex; 
+    }
+
+
+
+    
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px;
+        height: auto; 
+    }
+
+    
+   
+    .kettle {
+        font-size: 70px; 
+        margin-top: -40px;
+       
+    }
+
+    .kettle-info {
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+        width: 120%;
+        inset: 10px 55px 20px -20px;
+    }
+
+    .info-text {
+        display: none;
+    }
+
+    .shop-btn {
+        width: 110%;
+        height: 50px; 
+        font-size: 14px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+    }
+
+    .video {
+        margin-left: 15px; 
+
+    }
+
+    .video-volume {
+        width: 30px;
+        height: 10px;
+    }
+
+    .volume-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px; 
+        height: 46px; 
+        border: 1px solid #000; 
+        border-radius: 50%; 
+        position: relative; 
+    }
+
+    .video button {
+        background-color: #000;
+        color: #fff;
+        font-size: 30px;
+        padding-left: 12px;
+        border: none;
+        border-radius: 100%;
+        width: 28px;
+        height: 28px;
+        
+    }
+    
+
+    .video-title {
+        display: none;
+    }
+
+    .switch-kettle {
+        padding-top: 20px; 
+        justify-content: center;
+        display: none;
+    }
+
+    .switch-img {
+        width: 50px; 
+    }
+
+    .right-content {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kettle-img {
+        width: 226px;
+        height: 252px;
+    }
+
+    .blue-img {
+        left: 85px; 
+    }
+
+    .red-img {
+        left: 90px;
+        top: -20px;
+    }
+    
+    .beige-img {
+        left: 85px;
+        top: 0;
+    }
+
+    .pink-img {
+        left: 85px;
+        top: 0;
+    }
+
+    .back-img {
+        width: 150px;
+        height: 240px;
+    }
+
+    .dot-navigation {
+        position: static; 
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+
+    .dot-navigation ul {
+        flex-direction: row; 
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+
+    }
+
+    .dot::before {
+        width: 6px;
+        height: 6px; 
+    }
+
+    /* Модальне вікно */
+    .modal {
+        width: 90%;
+        left: 5%; 
+    }
+
+    .modal-content {
+        flex-direction: column; 
+        margin: 0;
+    }
+
+    .modal-title {
+        font-size: 16px; 
+    }
+
+    .modal-subtitle {
+        font-size: 14px; 
+    }
+
+    .modal-links {
+        margin-right: 0;
+    }
+
+    .modal-link {
+        font-size: 12px;
+    }
+}
