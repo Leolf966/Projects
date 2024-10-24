@@ -1,0 +1,71 @@
+body {
+    background: #001124;
+    color:#fff;
+}
+
+.paint {
+    padding-top: 85px;
+
+}
+
+.picture {
+    width: 593px;
+    height: 551px;
+}
+
+.entrance {
+    display: flex;
+    align-items: center;
+}
+
+.textik {
+    padding-left: 140px;
+    padding-bottom: 30px
+}
+
+.textt {
+    font-size: 35px;
+    font-family: 'DM Serif Display', serif;
+    padding-bottom: 20px;
+
+}
+
+.start_text {
+    font-family: "Arial", sans-serif;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.line input {
+    width: 281px;
+    height: 33px;
+    box-sizing: border-box;
+}
+
+.line {
+    margin-bottom: -3px;
+}
+
+.former {
+    padding-top: 10px;
+}
+
+.form {
+    text-decoration: none;
+    color: #499FFE;
+}
+
+.reg, .former {
+    font-family: "Arial", sans-serif;
+    margin-bottom: -7px;
+}
+
+.log {
+    width: 55%;
+    height: 35px;
+    background-color: #015FC7;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
