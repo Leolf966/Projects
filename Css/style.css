@@ -1,0 +1,550 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.background-container {
+    background-image: url(../img/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    /* Залиште місце для секції story */
+}
+
+.background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Чорний з 50% прозорістю */
+    z-index: 1;
+    /* Щоб бути позаду тексту */
+}
+
+header,
+.vint-age {
+    position: relative;
+    /* Додаємо позицію для заголовка */
+    z-index: 2;
+    /* Щоб текст був над затемненням */
+}
+
+/* Nav */
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 137px;
+}
+
+.navbar-logo {
+    font-size: 40px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.col-logo {
+    color: #FF9900;
+}
+
+.nav-item:first-child .nav-link {
+    color: #FF9900;
+}
+
+.navbar-search .nav-item .nav-link {
+    color: #FF9900;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--secondary-font-family);
+    font-size: var(--main-font-size);
+    transition: all .3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+/* Vint-age */
+
+.sides {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    top: 130px;
+    color: #fff;
+
+}
+
+.left-side {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* Вирівнювання по правому краю */
+}
+
+.subtitle {
+    color: #FF9900;
+}
+
+.title-info {
+    font-size: 34px;
+}
+
+.right-side {
+    position: relative;
+    top: 90px;
+}
+
+.author {
+    position: relative;
+    left: 405px;
+    color: #FF9900;
+}
+
+/* Story */
+
+.story {
+    margin: 100px 110px 0 110px;
+}
+
+.story-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.story-subtitle {
+    color: #FF9900;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.story-title .subtitle {
+    margin-left: 12px;
+}
+
+.story-info {
+    font-size: 18px;
+}
+
+.story-img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.center-content {
+    text-align: center;
+    position: relative;
+    bottom: 8.5px;
+}
+
+.right-content {
+    position: relative;
+    top: 12px;
+}
+
+.text-read {
+    display: flex;
+    justify-content: end;
+}
+
+.read-more {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+}
+
+.read-more::after {
+    content: '';
+    display: block;
+    width: 100%;
+    /* Ширина риски */
+    height: 4px;
+    /* Висота риски */
+    background-color: #FFE600;
+    /* Жовтий колір */
+}
+
+.collection {
+    margin: 200px 110px 0 110px;
+    position: relative;
+}
+
+.collect-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.collect-img {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.img-container {
+    position: relative;
+    /* Додаємо позицію для контейнера */
+    overflow: hidden;
+    /* Приховуємо все, що виходить за межі */
+    z-index: 2;
+}
+
+.img-container img {
+    width: 100%;
+    /* Зробити картинку адаптивною */
+    height: auto;
+    /* Зберегти пропорції */
+}
+
+.overlay {
+    position: absolute;
+    /* Фіксуємо текст */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Чорний фон з прозорістю */
+    color: #fff;
+    /* Білий текст */
+    display: flex;
+    /* Використовуємо flex для центрування */
+    justify-content: flex-start;
+    /* Центруємо по горизонталі */
+    align-items: flex-start;
+    /* Центруємо по вертикалі */
+    opacity: 1;
+    /* Завжди видимий */
+}
+
+.text-over {
+    margin: 280px 0 0 20px;
+}
+
+.title-overlay {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.title-overlay::after {
+    content: '';
+    display: block;
+    width: 32%;
+    /* Ширина риски */
+    height: 4px;
+    /* Висота риски */
+    background-color: #FFE600;
+    /* Жовтий колір */
+}
+
+.subtitle-overlay {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.orange-stripe {
+    height: 5px;
+    /* Висота полоски */
+    background-color: #FF9900;
+    /* Оранжевий колір */
+    position: relative;
+    top: 50px;
+}
+
+.bottom-stripe {
+    top: -50px;
+}
+
+
+/* Hour */
+
+.hour-title {
+    margin: 200px 110px 0 110px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hour-sides {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    top: 80px;
+    color: #fff;
+}
+
+.hour-right-side {
+    color: #000;
+}
+
+.right-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.r-subtitle {
+    color: #FF9900;
+    margin-left: 10px;
+}
+
+.back-hour {
+    background-image: url(../img/Vintage-hour/back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.hour-left-side {
+    margin: 100px 220px 0 0;
+}
+
+/* page-4-grid */
+.grid4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    gap: 1.25rem;
+    margin: 3.13rem auto 0 auto;
+    margin-bottom: 2.19rem;
+  }
+  .grid4 .grid-it4 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+  .grid4 .grid-it4.inside1{
+    display: grid;
+    align-items: stretch;
+    grid-template: 
+    "img1 img1"
+    "img2 img3"
+    "img4 img4";
+    gap: 1.25rem;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .grid4 .grid-it4.inside1 img:nth-child(1){
+    grid-area: img1;
+  }
+  .grid4 .grid-it4.inside1 img:nth-child(2){
+    grid-area: img2;
+  }
+  .grid4 .grid-it4.inside1 img:nth-child(3){
+    grid-area: img3;
+  }
+  .grid4 .grid-it4.inside1 img:nth-child(4){
+    grid-area: img4;
+  }
+  .grid4 .grid-it4.inside2{
+    display: grid;
+    grid-template: 
+    "img1 img1 img1"
+    "img2 img3 img5"
+    "img2 img4 img5";
+    align-items: stretch;
+    gap: 1.25rem;
+    justify-content: space-between;
+    align-content: space-between;
+    
+  }
+  .grid4 .grid-it4.inside2 img:nth-child(1){
+    grid-area: img1;
+
+  }
+  .grid4 .grid-it4.inside2 img:nth-child(2){
+    grid-area: img2;
+ 
+  }
+  .grid4 .grid-it4.inside2 img:nth-child(3){
+    grid-area: img3;
+  }
+  .grid4 .grid-it4.inside2 img:nth-child(4){
+    grid-area: img4;
+  }
+  .grid4 .grid-it4.inside2 img:nth-child(5){
+    grid-area: img5;
+  }
+
+.third-grid-img {
+    position: relative;
+    right: 12px;
+}
+/* Awards */
+
+.awards,
+.purpose {
+    margin: 200px 110px 100px 110px;
+}
+
+.second-img-award {
+    margin-top: 70px;
+}
+
+.right-content-award {
+    margin-top: -30px;
+}
+
+.story-img-container-award {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 150px;
+}
+
+.right-img-award {
+    padding-left: 25px;
+}
+
+/* Contact us */
+.back-hour-con {
+    background-image: url(../img/back-contact.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 132vh;
+}
+
+.contact-content {
+    padding: 150px 170px;
+    width: 100%;
+}
+
+.con-first {
+    position: relative;
+    bottom: 25px;
+}
+
+.offices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.contact-title {
+    font-weight: bold;
+}
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+    /* Вирівнювання по вертикалі */
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+input {
+    width: 100%;
+    /* Додайте цю строку */
+    flex-grow: 1;
+    /* Поле займатиме весь доступний простір */
+    padding: 10px;
+    border: none;
+    /* Прибираємо обводку */
+    border-bottom: 1px solid #000;
+    /* Лише нижня лінія */
+    font-size: 16px;
+    outline: none;
+    /* Прибираємо обводку при фокусі */
+    transition: border-color 0.3s;
+    /* Плавний перехід */
+}
+
+input:focus {
+    border-bottom: 1px solid #FF9900;
+    /* Оранжева лінія при фокусі */
+}
+
+button {
+    width: 182px;
+    height: 46px;
+    background-color: #FF9900;
+    /* Оранжевий колір */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Philosopher', sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e68a00;
+    /* Темніший відтінок при наведенні */
+}
+
+.footer-line {
+    position: relative;
+    top: 200px;
+    width: 1580px;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #000;
+}
+
+
+.footer {
+    position: relative;
+    top: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.border {
+    margin: 0 20px;
+}
