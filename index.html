@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="nav-links">
+            <nav class="container">
+                <a href="#" class="navbar-logo"> <img class="logo-img" src="./imgs/logos.png" alt=""></a>
+                <div class="items" id="menu-items">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#advantages">Advantages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-search">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <section class="advantages" id="advantages">
+        <div class="advantages-container">
+            <div class="advantage-card">
+                <img src="./imgs/tracking.svg" alt="Трекінг" class="advantage-icon">
+                <h3>Results tracking</h3>
+                <p>Track your training, progress and achievements in real time.</p>
+            </div>
+            <div class="advantage-card">
+                <img src="./imgs/analytics.svg" alt="Аналітика" class="advantage-icon">
+                <h3>Smart analytics</h3>
+                <p>Get detailed analysis of your data to achieve better results.</p>
+            </div>
+            <div class="advantage-card">
+                <img src="./imgs/goal.svg" alt="Цілі" class="advantage-icon">
+                <h3>Personal goals</h3>
+                <p>Create personalized goals and achieve them with our support.</p>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <div class="slideshow-container">
+            <div class="slides-fade fade">
+                <img src="imgs/first-review.jpg" alt="" class="review-img">
+                <div class="text-review">One of the best apps to use. I always see my results and get help to achieve my
+                    goal.
+                </div>
+            </div>
+            <div class="slides-fade fade">
+                <img src="imgs/second-review.jpg" alt="" class="review-img">
+                <div class="text-review">One of the best apps to use. I always see my results and get help to achieve my
+                    goal.
+                </div>
+            </div>
+            <div class="slides-fade fade ">
+                <img src="imgs/fourth-review.jpg" alt="" class="review-img">
+                <div class="text-review">One of the best apps to use. I always see my results and get help to achieve my
+                    goal.
+                </div>
+            </div>
+            <div class="slides-fade fade">
+                <img src="imgs/fifth-review.jpg" alt="" class="review-img">
+                <div class="text-review">One of the best apps to use. I always see my results and get help to achieve my
+                    goal.
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <br>
+        <div class="clicker">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+    <section class="footer" id="contacts">
+        <div class="footer-container">
+            <div class="footer-content contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: user1@example.com</p>
+                <p>Phone: +380976104311</p>
+                <p>Address: My Address 221 street</p>
+            </div>
+            <div class="footer-content social">
+                <h3>Follow us</h3>
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.instagram.com/"><img class="social-icons-img" src="./imgs/insta.svg"
+                                alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/?locale=uk_UA&_rdr"><img class="social-icons-img"
+                                src="./imgs/facebook.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/?lang=ru"><img class="social-icons-img" src="./imgs/twitter.svg"
+                                alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/"><img class="social-icons-img" src="./imgs/discord.svg"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="abous-last">
+            <p>2024 your company . All rights reserved</p>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>

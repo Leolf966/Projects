@@ -1,0 +1,84 @@
+/* Для мобільних пристроїв */
+@media (max-width: 576px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: center; /* Центрує логотип і меню */
+        text-align: center;
+        margin: 25px 60px -120px 60px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        padding: 5px 0;
+        margin-right: 20px;
+    }
+
+    .advantages-container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .advantage-card {
+        margin-left: 0; 
+        margin-right: 0;
+        column-gap: 10px;
+        width: 90%; 
+        
+    }
+    
+    .text-review {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        text-align: center;
+        margin-top: -80px;
+        gap: 40px;
+        justify-content: center;
+        width: 140px;
+    }
+}
+
+/* Для планшетів */
+@media (min-width: 577px) and (max-width:1320px) {
+    .navbar .container {
+        margin: 25px 45px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        width: 110%;
+        height: 60px;
+    }
+
+    .nav-item {
+        padding-left: 20px
+    }
+    
+    .navbar li {
+        display: flex;
+    }
+    
+    .advantages-container {
+        display: flex;
+    }
+    .advantage-card {
+        flex: 1 1 calc(30% - 20px);
+        max-width: 300px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 40px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-left:0;
+    }
+  
+    
+    .footer-container {
+        text-align: center;
+        margin-top: -80px;
+        gap: 80px;
+        justify-content: center;
+        width: 140px;
+    }
+}
