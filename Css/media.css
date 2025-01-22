@@ -355,7 +355,37 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1320px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .picture-style-sub {
+        width: 150px;
+        height: 150px;
+    }
+
+    #mainImage {
+        max-width: 800px;
+    }
+
+    .read-more-btn {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    #full-text {
+        max-height: 150px;
+    }
+
+    #full-text.expanded {
+        max-height: 1000px;
+    }
+}
+
+
+@media (min-width:1320px) {
     .read-more-btn {
         display: none;
     }
